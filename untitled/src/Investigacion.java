@@ -9,9 +9,9 @@ public class Investigacion {
     String tema;
     Date fechaCreacion;
     Date fechaModificacion;
-    Medios Medios;
+    Media Media;
 
-    public Investigacion(String titulo, String subtitulo, String autor, String categoria, String tema, Date fechaCreacion, Date fechaModificacion, Medios medios) {
+    public Investigacion(String titulo, String subtitulo, String autor, String categoria, String tema, Date fechaCreacion, Date fechaModificacion, Media media) {
         this.titulo = titulo;
         this.subtitulo = subtitulo;
         this.autor = autor;
@@ -19,7 +19,7 @@ public class Investigacion {
         this.tema = tema;
         this.fechaCreacion = fechaCreacion;
         this.fechaModificacion = fechaModificacion;
-        Medios = medios;
+        Media = media;
     }
     public String getTitulo() {
         return titulo;
@@ -77,12 +77,12 @@ public class Investigacion {
         this.fechaModificacion = fechaModificacion;
     }
 
-    public Medios getMedios() {
-        return Medios;
+    public Media getMedia() {
+        return Media;
     }
 
-    public void setMedios(Medios medios) {
-        Medios = medios;
+    public void setMedia(Media media) {
+        Media = media;
     }
 
     @Override
@@ -95,7 +95,7 @@ public class Investigacion {
                 ", tema='" + tema + '\'' +
                 ", fechaCreacion=" + fechaCreacion +
                 ", fechaModificacion=" + fechaModificacion +
-                ", Medios=" + Medios +
+                ", Medios=" + Media +
                 '}';
     }
 }
