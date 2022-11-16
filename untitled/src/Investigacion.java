@@ -2,6 +2,9 @@ import java.util.Date;
 
 public class Investigacion {
 
+
+
+    private Boolean estado;
     private String titulo;
     private String subtitulo;
     private String autor;
@@ -11,7 +14,16 @@ public class Investigacion {
     private Date fechaModificacion;
     private Media Media;
 
-    public Investigacion(String titulo, String subtitulo, String autor, String categoria, String tema, Date fechaCreacion, Date fechaModificacion, Media media) {
+    public Boolean getEstado() {
+        return estado;
+    }
+
+    public void setEstado(Boolean estado) {
+        this.estado = estado;
+    }
+
+    public Investigacion(Boolean estado, String titulo, String subtitulo, String autor, String categoria, String tema, Date fechaCreacion, Date fechaModificacion, Media media) {
+        this.estado = estado;
         this.titulo = titulo;
         this.subtitulo = subtitulo;
         this.autor = autor;

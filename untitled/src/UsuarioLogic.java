@@ -1,7 +1,3 @@
-package com.example.proyectologin;
-
-import com.example.proyectologin.UsuarioDAO;
-import com.example.proyectologin.Usuario;
 
 public class UsuarioLogic {
     private static UsuarioDAO usuariodao = new UsuarioDAO();

@@ -1,8 +1,8 @@
-package com.example.proyectologin;
+
 
 import java.util.ArrayList;
 import java.util.List;
-import com.example.proyectologin.Usuario;
+
 
 public class UsuarioDAO {
     private List<Usuario> usuarios;
@@ -30,7 +30,6 @@ public class UsuarioDAO {
             return false;
         }
     }
-
     public boolean modificar(Usuario usuario) {
         if (buscar(usuario.getUsuario())!=-1) {
             Usuario usuarioaux = obtener(usuario.getUsuario());
@@ -46,6 +45,7 @@ public class UsuarioDAO {
             return false;
         }
     }
+
 
     public boolean eliminar(String usuario) {
         if (buscar(usuario)!=-1) {
@@ -65,3 +65,4 @@ public class UsuarioDAO {
     }
 
 }
+

@@ -1,8 +1,10 @@
 import java.util.Date;
 public class Media {
 
+
     // corregi el nombre Medios a medio
     //no deberia tener un id de medio? o algo asi?
+    private Boolean estado;
     private Date fecha;
     private String authoria;
 
@@ -24,11 +26,20 @@ public class Media {
 
 
 
+    public Boolean getEstado() {
+        return estado;
+    }
 
-    public Media(Date fecha, String authoria) {
+    public void setEstado(Boolean estado) {
+        this.estado = estado;
+    }
+
+    public Media(Boolean estado, Date fecha, String authoria) {
+        this.estado = estado;
         this.fecha = fecha;
         this.authoria = authoria;
     }
+
 
 
     @Override

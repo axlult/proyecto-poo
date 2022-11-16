@@ -1,6 +1,8 @@
-package com.example.proyectologin;
+
 
 public class Usuario {
+
+    private Boolean estado;
     private String usuario;
     private String nombres;
     private String apellidos;
@@ -10,7 +12,8 @@ public class Usuario {
     private String rango;
     private String fotoPerfil;
 
-    public Usuario(String usuario, String nombres, String apellidos, String contrasenia, String edad, String correo, String rango, String fotoPerfil) {
+    public Usuario(Boolean estado, String usuario, String nombres, String apellidos, String contrasenia, String edad, String correo, String rango, String fotoPerfil) {
+        this.estado = estado;
         this.usuario = usuario;
         this.nombres = nombres;
         this.apellidos = apellidos;
@@ -19,6 +22,14 @@ public class Usuario {
         this.correo = correo;
         this.rango = rango;
         this.fotoPerfil = fotoPerfil;
+    }
+
+    public Boolean getEstado() {
+        return estado;
+    }
+
+    public void setEstado(Boolean estado) {
+        this.estado = estado;
     }
 
     public String getUsuario() {
